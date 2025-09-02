@@ -2,7 +2,7 @@ use criterion::{black_box, criterion_group, criterion_main, Criterion};
 
 fn benchmark(c: &mut Criterion) {
     let mut g = c.benchmark_group("Vec Initialization Methods");
-    for size_b in 10..=21 {
+    for size_b in 10..=22 {
         let size = 1 << size_b;
 
         let base_data: Vec<usize> = (0..size).collect();
